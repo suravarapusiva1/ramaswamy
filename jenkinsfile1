@@ -1,0 +1,45 @@
+pipeline{
+    agent any
+    stages{
+        stage("checkout stage"){
+            steps{
+                git_url=""
+            }
+        }
+        stage("build code"){
+            steps{
+                echo "this is a build stage"
+            }
+        }
+        stage("test code"){
+            steps{
+                echo "this is a testing stage"
+            }
+        }
+        stage("scan code"){
+            steps{
+                echo "this is a scan stage"
+            }
+        }
+        stage("artifact"){
+            steps{
+                echo "this is a artifact stage"
+            }
+        }
+        stage("uti"){
+            steps{
+                echo "this is a uti stage"
+            }
+        }
+        stage("dev"){
+            steps{
+                echo "deployment stage"
+            }
+        }
+       stage("pro"){
+            steps{
+                echo "production stage"
+            }
+        }  
+    }
+}
