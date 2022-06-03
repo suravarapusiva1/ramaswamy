@@ -1,11 +1,11 @@
 pipeline{
     agent any
     stages{
-        stage("checkout stage"){
+        /*stage("checkout stage"){
             steps{
                 git_repo:"https://github.com/suravarapusiva1/ramaswamy.git",branch_name:"main"
             }
-        }
+        } */
         stage("build code"){
             steps{
                 echo "this is a build stage"
