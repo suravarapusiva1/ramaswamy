@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("checkout stage"){
             steps{
-                git_repo_url = "https://github.com/suravarapusiva1/ramaswamy.git",branch:"dummy"
+                git_repo_url:"https://github.com/suravarapusiva1/ramaswamy.git", branch:"dummy"
             }
         } 
         stage("build code"){
